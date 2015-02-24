@@ -1,0 +1,13 @@
+{
+  "name": "autoprefix-style-prop",
+  "version": "1.0.0",
+  "description": "Adds `Webkit` prefix to flexbox properties in a React style prop",
+  "main": "src/init.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:appsforartists/ambidex.git"
+  },
+  "contributors": [
+    "Brenton Simpson <bresimpson@ebay.com> (http://appsforartists.com)"
+  ]
+}
