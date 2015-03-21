@@ -5,7 +5,7 @@
   "main": "src/init.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:appsforartists/ambidex.git"
+    "url": "git@github.com:appsforartists/autoprefix-style-prop.git"
   },
   "contributors": [
     "Brenton Simpson <bresimpson@ebay.com> (http://appsforartists.com)"
