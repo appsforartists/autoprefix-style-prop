@@ -22,6 +22,8 @@ function AutoprefixStyleProp (styleProp, userAgent) {
     userAgent = this.navigator
       ? this.navigator.userAgent
       : null;
+
+    var isSafari = userAgent && userAgent.includes("WebKit") && !userAgent.includes("Chrom");
   }
 
   var result = {};
@@ -30,13 +32,10 @@ function AutoprefixStyleProp (styleProp, userAgent) {
     key => {
       // Browser sniffing sucks, but Safari overloads display, and there's
       // no way to set a style key to two values in React
-      if (
-           key === "display" && styleProp["display"].includes("flex")
-        && userAgent && userAgent.includes("WebKit") && !userAgent.includes("Chrom")
-      ) {
+      if (isSafari && key === "display" && styleProp["display"].includes("flex")) {
         result["display"] = `-webkit-${ styleProp["display"] }`;
 
-      } else if (flexboxKeys.includes(key)) {
+      } else if (isSafari && flexboxKeys.includes(key)) {
         var titleCasedKey = key.substring(0, 1).toUpperCase() + key.substring(1);
         result[`Webkit${ titleCasedKey }`] = styleProp[key];
 
