@@ -14,6 +14,11 @@ var flexboxKeys = [
   "justifyContent",
   "order",
   "transform",
+  "transformOrigin",
+  "transformOriginX",
+  "transformOriginY",
+  "transformOriginZ",
+  "transformStyle",
 ];
 
 function AutoprefixStyleProp (styleProp, userAgent) {
