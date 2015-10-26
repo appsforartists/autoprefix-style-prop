@@ -23,8 +23,7 @@ var flexboxKeys = [
 
 function AutoprefixStyleProp (styleProp, userAgent) {
   if (!userAgent) {
-    // use `this` instead of `global` to be accomodate browsers without Webpack
-    userAgent = this.navigator
+    userAgent = typeof navigator !== "undefined"
       ? this.navigator.userAgent
       : null;
 
