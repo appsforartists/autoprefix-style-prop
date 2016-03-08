@@ -24,7 +24,7 @@ var flexboxKeys = [
 function AutoprefixStyleProp (styleProp, userAgent) {
   if (!userAgent) {
     userAgent = typeof navigator !== "undefined"
-      ? this.navigator.userAgent
+      ? navigator.userAgent
       : null;
 
     var isSafari = userAgent && userAgent.includes("WebKit") && !userAgent.includes("Chrom");
