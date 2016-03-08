@@ -1,6 +1,6 @@
 {
   "name": "autoprefix-style-prop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Adds `Webkit` prefix to flexbox properties in a React style prop",
   "main": "src/init.js",
   "repository": {

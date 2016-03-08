@@ -1,3 +1,9 @@
+v1.0.4 - Tue, 08 Mar 2016 23:45:36 GMT
+--------------------------------------
+
+- [b3debac](../../commit/b3debac) [fixed] userAgent check when being imported from an ES2015 Module
+
+
 v1.0.3 - Mon, 26 Oct 2015 05:14:42 GMT
 --------------------------------------
 
